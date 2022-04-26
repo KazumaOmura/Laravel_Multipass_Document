@@ -1,0 +1,8 @@
+---
+# tasks file for nginx
+
+- name: Install MySQL
+  apt:
+    name: mysql-server
+    state: latest
+    

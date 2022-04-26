@@ -1,0 +1,13 @@
+---
+# tasks file for nginx
+
+- name: Install figlet
+  apt:
+    name: figlet
+    state: latest
+    
+- name: replace bash_profile
+  replace:
+    dest: ~/.bash_profile
+    regexp: '^echo -e'
+    replace: "echo -e \"\033[36m`figlet aaaaaaa`\033[m\""

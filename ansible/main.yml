@@ -1,0 +1,10 @@
+- hosts: web
+  become: yes
+  # sudo: yes
+  roles:
+    - { role: nginx, tags: ["nginx"] }
+    - { role: php, tags: ["php"] }
+    - { role: MySQL, tags: ["MySQL"] }
+    - { role: phpmyadmin, tags: ["phpmyadmin"] }
+    - { role: ssh_ascii, tags: ["ssh_ascii"] }
+    
