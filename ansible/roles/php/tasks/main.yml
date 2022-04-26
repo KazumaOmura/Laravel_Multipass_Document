@@ -17,12 +17,6 @@
     name: php8.1
     state: latest
 
-- name: Install PHP
-  apt:
-    name: php7.4
-    state: latest
-    # ver: 3
-
 - name: Install PHP-fpm
   apt:
     name: php-fpm
@@ -43,12 +37,12 @@
     name: php-curl
     state: latest
 
-- name: Install php-pdo
-  apt:
-    name: php-pdo
-    state: latest
+# - name: Install php-pdo
+#   apt:
+#     name: php-pdo
+#     state: latest
 
 - name: replace php-fpm config
   copy:
     src: ../templates/_www.conf.j2
-    dest: /etc/php/7.4/fpm/pool.d/www.conf
+    dest: /etc/php/8.1/fpm/pool.d/www.conf
