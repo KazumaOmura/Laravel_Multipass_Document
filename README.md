@@ -1,4 +1,4 @@
-## leonコード
+# leonコード
 ### 仮想マシン起動
 ```
 $ multipass launch 20.04 -n YouTube-AB
@@ -34,6 +34,7 @@ $ multipass mount YouTube-AB YouTube-AB:/var/www/html
 $ mutipass ls
 ```
 
+# メインコード
 ### multipassインストール
 ```
 $ brew install --cask multipass
