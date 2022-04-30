@@ -21,18 +21,29 @@ $ sudo vim ~/.ssh/authorized_keys
 
 ### Playbook起動
 ```
-$ ansible-playbook -i hosts ansible/main.yml -u ubuntu
+$ ansible-playbook -i hosts main.yml -u ubuntu
 ```
 
 ### mountを設置
 ```
 $ multipass mount YouTube-AB YouTube-AB:/var/www/html
+$ multipass mount ../phpMyadmin YouTube-AB:/var/www/phpMyadmin
 ```
 
 ### ip確認
 ```
 $ mutipass ls
 ```
+
+
+
+
+
+
+
+
+
+    
 
 # メインコード
 ### multipassインストール
