@@ -19,7 +19,7 @@
 
 - name: Install PHP-fpm
   apt:
-    name: php-fpm
+    name: php8.1-fpm
     state: latest
 
 - name: Install PHP-mbstring
